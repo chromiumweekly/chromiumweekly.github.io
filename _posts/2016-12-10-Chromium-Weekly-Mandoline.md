@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "消失的Mandoline"
-subtitle:   "Chromium Weekly 18"
+subtitle:   "Chromium Weekly 19"
 date:       2016-12-10
 author:     "geguangle"
 header-img: "img/about-chromium.jpg"
