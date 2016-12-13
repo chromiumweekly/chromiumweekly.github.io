@@ -62,11 +62,15 @@ tags:
 
 #### FYI - src/mandoline @ 2015-5-15 
 > A few of us have begun investigating a replacement for src/content using Mojo and Mojo Shell. Our equivalent of content shell is in the new src/mandoline directory.
+>
 > The main effect of this on Chromium source are:
+>
 > - an additional Blink embedder in src/components/html_viewer (actually this has been there already for 12+ months)
 > - componentization of features from src/content as we improve the Mojo blink embedding and want to share code with content.
+>
 > As we develop any useful docs/data/etc we will link them here:
 > http://dev.chromium.org/developers/mandoline
+>
 > Thanks,
 > -Ben
 
@@ -114,16 +118,15 @@ Review URL: https://codereview.chromium.org/1677293002
 
 当前的首要任务就是尽快将 ```Chrome``` 迁移到 ```Mojo``` 之上，新功能将会完全基于 ```Mojo```，老功能逐步开始迁移。
 我们会从基础服务开始：
-> UI(rendering & input) 
-
-> Network 
-
+> UI(rendering & input)
+>
+> Network
+>
 > FileSystem
-
+>
 > Preference
-
+>
 > Local Storage
-
 > ......
 
 这个改动比之前的都要大，可以说是脱胎换骨，预计需要几年的时间才能完成，最终 content 层也许会消失。
@@ -140,13 +143,9 @@ Review URL: https://codereview.chromium.org/1677293002
 
 预计会从下面中选择内容来进行分享：
 > Mojo 101 -- 需要请教@舒畅来帮忙
-
 > Mandoline 设计及实现
-
 > Network Service in Chrome
-
 > LocalStorage design using Chrome Services
-
 > Video Capture Mojo Component
 
 
@@ -159,6 +158,7 @@ Review URL: https://codereview.chromium.org/1677293002
 #### 1. LUCI Project
 
 > Layered "Universal" Continuous Integration - A collection of scalable open-source build infrastructure services.
+>
 > [LogDog](https://luci-logdog.appspot.com/) and [Milo](https://luci-milo.appspot.com/) are components of the LUCI project, an effort to provide more reliable and scalable build and test infrastructure for Chromium by augmenting and eventually replacing Buildbot. For more information see [github.com/luci](http://github.com/luci) or reach out to [infra-dev@chromium.org](infra-dev@chromium.org).
 
 LUCI 项目是Chrome团队在持续集成方面继续优化和改进，以期提供更加可靠的构建和测试设施。最终会取代目前的 Buildbot。
@@ -171,6 +171,6 @@ LUCI 项目是Chrome团队在持续集成方面继续优化和改进，以期提
 
 #### 3. IPC Message is deprecated
 >TL;DR: IPC::Message is deprecated. All new IPC in Chrome should use Mojo.
->
+
 ```Mojo``` 经过长时间的应用，已经达到非常好的状态。特别是在使用过程中，根据反馈还一直不断地改进，现在已经打磨的非常好了。咱们继续向前走，肯定是要切到这上面来的。官方说的优点那是相当多，目前我也不懂，等后面咱们结合代码、案例再展开。
 
