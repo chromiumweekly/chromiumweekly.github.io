@@ -163,6 +163,20 @@ Review URL: https://codereview.chromium.org/1677293002
 
 有了这些背景知识，咱们就可以继续讲讲 ```Headless、Onion Soup、Mojo in Blink```等内容。
 
+参考文献
+> [Life of a
+Browser Component](https://a77db9aa-a-7b23c8ea-s-sites.googlegroups.com/a/chromium.org/dev/developers/design-documents/cookbook/Life%20of%20a%20Browser%20Component.pdf?attachauth=ANoY7cotUtC8u2lRinQ2yBKfVGhjelmfcd0tGDjqyUH4uqNZRCscRZtI6OcB-2bSTRMbZxqDChU9m8sUWMRe9-xchSwYhkqv7ciVuAZP9KOzLU7SXHdbHPALNbpulaeuCjs1M8O40gYza1nX6z72ea_BiVbj0xcyTlr0LJU6fiEKYkBpeR3nAbRZq-qh4PO6AEGz7TzpbCV6hUfzz1b9GEvYSlSMm_UqzAVMGbjBCT2CxA7TBGr5-Y6-OyJ5hsFXPbimd2NJOtiNQ9QRpEil50hXvFUZmuYPTQ%3D%3D&attredirects=1)
+>
+> [Chrome Service Model](https://docs.google.com/document/d/15I7sQyQo6zsqXVNAlVd520tdGaS8FCicZHrN0yRu-oU/edit#heading=h.p37l9e7o0io5)
+>
+> [LocalStorage using Chrome Service Model](https://docs.google.com/document/d/18wpuaitdvki6mO4aWkjvORgryUHM-mvDIqppDXhbSTk/edit#heading=h.qf9i7c52uy3r)
+>
+> [Network Service in Chrome](https://docs.google.com/document/d/1wAHLw9h7gGuqJNCgG1mP1BmLtCGfZ2pys-PdZQ1vg7M/edit#heading=h.qf9i7c52uy3r)
+>
+> [Video Capture Mojo Component](https://docs.google.com/document/d/1Qw7rw1AJy0QHXjha36jZNiEuxsxWslJ_X-zpOhijvI8/edit#heading=h.2ki8zk71f7w2)
+>
+> [Mojo](https://drive.google.com/drive/folders/0B-WCZkfLIXQTajI4WWZhdGhjNnM)
+
 ----------
 
 ### News Express
