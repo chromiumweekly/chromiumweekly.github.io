@@ -28,7 +28,8 @@ tags:
 
 我们知道，```Chromium``` 的架构是一直不断地演进，现在她又迎来了一次大的变化。
 
-让我们先简单回顾一下前几次变化:
+让我们先简单回顾一下前几次变化
+
 > Content Module
 > 
 > Components
@@ -47,7 +48,7 @@ tags:
 
 ![](http://i.imgur.com/FR34DTm.jpg)
 
-以Autofill的组件化为例子，前后对比如下：
+以 ```Autofill``` 的组件化为例子，前后对比如下：
 
 ![](http://i.imgur.com/pD2ovZd.jpg)
 
@@ -56,7 +57,7 @@ tags:
 由于 ```iOS``` 平台上， ```Apple```的种种限制： 自家提供的渲染引擎和JavaScript引擎，必须为单进程， 导致 ```chromium``` 就不能依赖 ```content``` 层了。```Layered Components``` 就是将 ```component``` 中依赖 ```content``` 的代码继续剥离出来。可以和 ```iOS``` 平台共享的代码放入 ```core``` 文件夹，```iOS``` 特有的代码放入 ```ios```文件夹，依赖 ```content``` 的代码放入```content```文件夹。
 通过```DEPS```机制来维护这种限制。
 
-一路走来，一路演化，```Chromium``` 项目终于顺利支持了六个平台：Windows、Mac、Linux、Chrome OS、Android、iOS。
+一路走来，一路演化，```Chromium``` 项目终于顺利支持了六个平台：```Windows、Mac、Linux、Chrome OS、Android、iOS```。
 
 回首望望代码，复杂、臃肿、冗余充斥了各个角落，再出发，```Mandoline``` 实现项目应运而生。
 
@@ -144,6 +145,7 @@ Review URL: https://codereview.chromium.org/1677293002
 后续用实例来介绍  ```Mojo``` 和 ```Chrome Service Model``` 在代码中的实现。
 
 预计会从下面中选择内容来进行分享：
+
 > Mojo 101 -- 需要请教@舒畅来帮忙
 > Mandoline 设计及实现
 > Network Service in Chrome
