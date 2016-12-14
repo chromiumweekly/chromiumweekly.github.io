@@ -93,7 +93,7 @@ tags:
 
 > Blink + Component = html_viewer
 
-通过实践和验证，最后的结果非常不错，找到了 Chrome Service Model的方向,这个的前提是实现 Mojo的迁移。
+通过实践和验证，最后的结果非常不错，找到了 ```Chrome Service Model``` 的方向,这个的前提是实现 Mojo的迁移。
 
 功成身退，```Mandoline``` 不再占用任何字节，消失的无影无踪。
 
@@ -125,13 +125,18 @@ Review URL: https://codereview.chromium.org/1677293002
 我们会从基础服务开始：
 
 > UI(rendering & input)
+>
 > Network
+>
 > FileSystem
+>
 > Preference
+>
 > Local Storage
+>
 > ......
 
-这个改动比之前的都要大，可以说是脱胎换骨，预计需要几年的时间才能完成，最终 content 层也许会消失。
+这个改动比之前的都要大，可以说是脱胎换骨，预计需要几年的时间才能完成，最终 ```content``` 层也许会消失。
 
 现在新的设计方案基本都会涉及到 ```Mojo```，如果是相对独立的功能，基本都是 ```Chrome Service Model + Mojo``` 的风格。
 当前的架构结构：
@@ -168,13 +173,13 @@ Review URL: https://codereview.chromium.org/1677293002
 >
 > [LogDog](https://luci-logdog.appspot.com/) and [Milo](https://luci-milo.appspot.com/) are components of the LUCI project, an effort to provide more reliable and scalable build and test infrastructure for Chromium by augmenting and eventually replacing Buildbot. For more information see [github.com/luci](http://github.com/luci) or reach out to [infra-dev@chromium.org](infra-dev@chromium.org).
 
-LUCI 项目是Chrome团队在持续集成方面继续优化和改进，以期提供更加可靠的构建和测试设施。最终会取代目前的 Buildbot。
+```LUCI``` 项目是```Chrome```团队在持续集成方面继续优化和改进，以期提供更加可靠的构建和测试设施。最终会取代目前的 ```Buildbot```。
 
 
 #### 2. PSA: Deprecate Blink-in-JS
 2年前发起的 ```Blink-in-JS``` 项目已经被停掉，这个设计存在性能、安全方面的问题。
 
-目前已经成立 ```Onion Soup``` 项目， 推动 Blink 向着层次化、服务化方向发展。这个新的设计方案，比 Blink-in-JS 更加优秀，后面会把 ```Blink-in-JS``` 已经实现的功能，重新用 C++ 来实现。
+目前已经成立 ```Onion Soup``` 项目， 推动 ```Blink``` 向着层次化、服务化方向发展。这个新的设计方案，比 ```Blink-in-JS``` 更加优秀，后面会把 ```Blink-in-JS``` 已经实现的功能，重新用 ```C++``` 来实现。
 
 #### 3. IPC Message is deprecated
 >TL;DR: IPC::Message is deprecated. All new IPC in Chrome should use Mojo.
