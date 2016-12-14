@@ -111,7 +111,7 @@ Review URL: https://codereview.chromium.org/1677293002
 
 这条路上，你我都将战于其中，就看相逢于何时了。
 
-#### Announcing the Content Modularization Project
+#### [Announcing the Content Modularization Project](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/_tWwQxxqDpA)
 
 转眼5年过去，```Chrome``` 的功能大幅增加，```content``` 层负责的内容非常多，也变的非常复杂了，几乎所有的功能都会涉及到她，这里已经成为了目前的瓶颈。
 
@@ -177,12 +177,19 @@ Browser Component](https://a77db9aa-a-7b23c8ea-s-sites.googlegroups.com/a/chromi
 > [Video Capture Mojo Component](https://docs.google.com/document/d/1Qw7rw1AJy0QHXjha36jZNiEuxsxWslJ_X-zpOhijvI8/edit#heading=h.2ki8zk71f7w2)
 >
 > [Mojo](https://drive.google.com/drive/folders/0B-WCZkfLIXQTajI4WWZhdGhjNnM)
+>
+> [Mandoline Project Summary](https://docs.google.com/document/d/1AjTsDoY6ugaykfqGLyOHYfp67hMp0tMjDbZcJ5EH9fw/edit?usp=sharing)
+> 
+> [Project Carnitas - Code Cleanup](https://groups.google.com/a/chromium.org/d/msg/chromium-dev/X4VTnSWRasE/J8E-VTqXyvgJ)
+>
+> []()
+
 
 ----------
 
 ### News Express
 
-#### 1. LUCI Project
+#### 1. [LUCI Project](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/YMJaQ0oXiVE)
 
 > Layered "Universal" Continuous Integration - A collection of scalable open-source build infrastructure services.
 >
@@ -191,12 +198,12 @@ Browser Component](https://a77db9aa-a-7b23c8ea-s-sites.googlegroups.com/a/chromi
 ```LUCI``` 项目是```Chrome```团队在持续集成方面继续优化和改进，以期提供更加可靠的构建和测试设施。最终会取代目前的 ```Buildbot```。
 
 
-#### 2. PSA: Deprecate Blink-in-JS
+#### 2. [PSA: Deprecate Blink-in-JS](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/f430AkW9MTM)
 2年前发起的 ```Blink-in-JS``` 项目已经被停掉，这个设计存在性能、安全方面的问题。
 
 目前已经成立 ```Onion Soup``` 项目， 推动 ```Blink``` 向着层次化、服务化方向发展。这个新的设计方案，比 ```Blink-in-JS``` 更加优秀，后面会把 ```Blink-in-JS``` 已经实现的功能，重新用 ```C++``` 来实现。
 
-#### 3. IPC Message is deprecated
+#### 3. [IPC Message is deprecated](https://groups.google.com/a/chromium.org/forum/#!msg/chromium-dev/3zK8HWY10eo/tw1cIumKBQAJ)
 >TL;DR: IPC::Message is deprecated. All new IPC in Chrome should use Mojo.
 
 ```Mojo``` 经过长时间的应用，已经达到非常好的状态。特别是在使用过程中，根据反馈还一直不断地改进，现在已经打磨的非常好了。咱们继续向前走，肯定是要切到这上面来的。官方说的优点那是相当多，目前我也不懂，等后面咱们结合代码、案例再展开。
