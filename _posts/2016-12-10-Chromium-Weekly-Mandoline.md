@@ -86,9 +86,11 @@ tags:
 以 ```src/components/html_viewer``` 为例，她通过 ```Mojo``` 直接利用 ```Blink``` 实现网页浏览、PDF查看。从 ```Mojo``` 角度来看就是，```Blink``` 以 ```Mojo``` 的形式提供服务， ```html_viewer``` 和 ```content``` 作为 ```Mojo shell``` 使用服务。
 
 以前：
+
 > Blink + Content + Component = Chrome
 
 现在：
+
 > Blink + Component = html_viewer
 
 通过实践和验证，最后的结果非常不错，找到了 Chrome Service Model的方向,这个的前提是实现 Mojo的迁移。
@@ -121,14 +123,11 @@ Review URL: https://codereview.chromium.org/1677293002
 
 当前的首要任务就是尽快将 ```Chrome``` 迁移到 ```Mojo``` 之上，新功能将会完全基于 ```Mojo```，老功能逐步开始迁移。
 我们会从基础服务开始：
+
 > UI(rendering & input)
->
 > Network
->
 > FileSystem
->
 > Preference
->
 > Local Storage
 > ......
 
@@ -147,9 +146,13 @@ Review URL: https://codereview.chromium.org/1677293002
 预计会从下面中选择内容来进行分享：
 
 > Mojo 101 -- 需要请教@舒畅来帮忙
+>
 > Mandoline 设计及实现
+>
 > Network Service in Chrome
+>
 > LocalStorage design using Chrome Services
+>
 > Video Capture Mojo Component
 
 
